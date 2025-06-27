@@ -1,0 +1,214 @@
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "montserrat";
+} */
+ body{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        /* background-color: beige; */
+ }
+
+.header{
+    display: flex;
+    justify-content: space-around;
+}
+.header ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    align-items: center;
+    font-weight: bold;
+
+}
+ul a{
+text-decoration: none;
+color: black;
+}
+.header ul li:hover{
+    /* background-color: brown; */
+    color: black;
+     background-color: #dbdfd0;
+    border-radius: 20px;
+    padding: 4px 16px 4px 16px;
+}
+
+.header button{
+    font-weight: bold;
+    font-size: 12px;
+    height:45px ;
+    border-radius: 20px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    width: 120px;
+    align-items: center;
+    margin-top: 20px;
+}
+.header button:hover{
+    border-radius: 20px;
+    padding: 4px 16px 4px 16px; background-color: brown;
+    border-radius: 20px;
+    padding: 4px 16px 4px 16px;
+    color: white;
+}
+.logo img{
+    width: 56px;
+    height: 55px;
+}
+.logo{
+    display: flex;
+    gap: 4px;
+}
+
+.madax{
+    background-color: #474747;
+    padding: 20px;
+    /* color: black; */
+
+}
+.madax h1{
+text-align: center;
+font-size: xx-large;
+color: wheat;
+
+}
+.sawir img{
+    width: 250px;
+    height: 200px;
+    border-radius: 4px;
+    
+}
+.parent{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 200px;
+
+}
+.xogta{
+    margin-left: 20px;
+    height: 90px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    margin-bottom: 20px;
+    
+}
+.guud button{
+    background-color: gold;
+    border: 0px;
+    padding: 10px;
+    border-radius: 8px;
+    width: 120px;
+    color: brown;
+}
+.guud button :hover{
+    background-color: #474747;
+    border: 0px;
+    padding: 10px;
+    border-radius: 8px;
+    width: 120px;
+    color: white;
+}
+
+
+.guud{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    
+    column-gap: 300px;
+    
+    
+
+}
+.guud button{
+
+}
+.footer h1{
+    text-align: center;
+    color: wheat;
+}
+.footer{
+    background-color:#474747;
+    padding: 15px;
+}
+/* ========== Responsive Design for Extra Page ========== */
+@media (max-width: 1024px) {
+  .parent {
+    flex-direction: column;
+    margin-left: 50px;
+    align-items: center;
+  }
+
+  .guud {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 20px;
+    justify-items: center;
+    padding: 0 20px;
+  }
+
+  .sawir img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .xogta {
+    margin-left: 0;
+    padding-top: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .header ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .guud button {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .madax h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .parent {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  .guud {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .guud button {
+    width: 100%;
+  }
+
+  .footer h1 {
+    font-size: 18px;
+  }
+
+  .madax h1 {
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+
+
